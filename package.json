@@ -2,10 +2,10 @@
   "name": "chaiaurbackend",
   "version": "1.0.0",
   "description": "Learning Backend",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
@@ -13,5 +13,9 @@
     "chai"
   ],
   "author": "Keshav Goyal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
 }
