@@ -1,6 +1,7 @@
 // this is the common way of writting it but it destruct the consistency of the code that why we are not using it but it will work no problem in it -->require('dotenv').config({path:'./env'})
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
+import {app} from './app.js'
 dotenv.config({
     path: './.env'
 })
