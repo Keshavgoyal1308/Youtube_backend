@@ -17,7 +17,9 @@ import fs from 'fs';
                 
                 resource_type: 'auto'
             });
-            return result.url;
+            // console.log('File uploaded to Cloudinary:', result);
+            fs.unlinkSync(localfilePath); // Clean up the local file after upload
+            return result;
         } catch (error) {
             fs.unlinkSync(localfilePath); // Clean up the local file if upload fails
             console.error('Error uploading to Cloudinary:', error);
